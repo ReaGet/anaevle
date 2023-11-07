@@ -24,7 +24,8 @@ export function basic(values: number[]): string {
 }
 
 export function personality(values: number[]): string {
-  const [wn1, wn2, wn3, wn4, wn5, wn6, pn1, pn2, pn3, pn4, pn5] = values;
+  const [wn1, pn1, pn5] = values;
+  // const [wn1, wn2, wn3, wn4, wn5, wn6, pn1, pn2, pn3, pn4, pn5] = values;
   let starNumber2 = sumIfMoreThan(pn5 + wn1);
   let starNumber4 = sumIfMoreThan(pn1 + wn1);
   let starNumber6 = sumIfMoreThan(pn1 + pn5);
