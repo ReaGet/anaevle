@@ -38,10 +38,10 @@ export function calculate(date: string) {
   fourthPairNumber = sumIfMoreThan(fourthWorkNumber + fifthWorkNumber);
   fifthPairNumber = sumIfMoreThan(fifthWorkNumber + firstWorkNumber);
 
-  return [
+  return {
     firstWorkNumber, secondWorkNumber, thirdWorkNumber, fourthWorkNumber, fifthWorkNumber, sixthWorkNumber,
     firstPairNumber, secondPairNumber, thirdPairNumber, fourthPairNumber, fifthPairNumber,
-  ];
+  };
 }
 
 export function sumIfMoreThan(value: number, moreThan: number = 22): number {

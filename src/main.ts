@@ -1,15 +1,25 @@
 import "./css/index.css";
-import { calculate } from "./js/utils";
-import { basic, personality, spirituality } from "./js/templates";
+import { setupCalculation } from "./js/calculation";
 
-const _date = "28.03.1997";
+// const _date = "03.04.1998";
 
-const values = calculate(_date);
+// const values = calculate(_date);
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
-  <div class="flex flex-col items-center gap-40 min-h-screen bg-gray-950">
-    ${basic(values)}
-    ${personality([values[0], values[6], values[10]])}
-    ${spirituality([values[0], values[6], values[10]])}
+  <div class="flex flex-col items-center gap-40 min-h-screen py-40">
+    <div class="w-full max-w-[350px]">
+      <form class="flex flex-col gap-4 w-full">
+        <input
+          class="p-6 rounded-lg text-2xl outline-none focus:ring-4 focus:ring-indigo-100"
+          type="date"
+          placeholder="dd.mm.yyyy"
+          pattern="\d{2}.\d{2}.\d{4}"
+        >
+        <button class="p-6 rounded-lg text-2xl text-white bg-indigo-500">Расчитать</button>
+      </form>
+    </div>
+    <div class="flex flex-col items-center gap-40" data-type="content"></div>
   </div>
 `;
+
+setupCalculation(document.querySelector("form")!);
