@@ -20,7 +20,7 @@ export function basic(values: any): string {
 
   return `
     <div class="relative flex items-center justify-center w-[350px] h-[350px] text-[25px] text-white bg-gray-900 rounded-3xl">
-      <img src="${hardStar}" width="250" height="250">
+      <img src=".${hardStar}" width="250" height="250">
       <div class="absolute -mt-[260px]">${secondWorkNumber}</div>
       <div class="absolute -ml-[290px] -mt-16">${firstWorkNumber}</div>
       <div class="absolute -mr-[290px] -mt-16">${thirdWorkNumber}</div>
@@ -49,7 +49,7 @@ export function personality(values: any): string {
     <div class="flex flex-col items-center gap-16">
       <div class="text-[18px] text-violet-700 font-bold">ТРЕУГОЛЬНИК ЛИЧНОСТИ</div>
       <div class="relative flex items-center justify-center w-[350px] h-[350px] text-[25px] text-white font-semibold bg-gray-900 rounded-3xl">
-        <img src="${triangle}" width="250" height="250">
+        <img src=".${triangle}" width="250" height="250">
         <div class="absolute -mt-[300px] text-purple-600">${firstWorkNumber}</div>
         <div class="absolute -mb-[300px] -ml-[290px] text-cyan-500">${fifthPairNumber}</div>
         <div class="absolute  -mb-[300px] -mr-[290px] text-cyan-500">${firstPairNumber}</div>
@@ -77,7 +77,7 @@ export function spirituality(values: any): string {
     <div class="flex flex-col items-center gap-16">
       <div class="text-[18px] text-violet-700 font-bold">ТРЕУГОЛЬНИК ДУХОВНОСТИ</div>
       <div class="relative flex items-center justify-center w-[350px] h-[350px] text-[25px] text-white font-semibold bg-gray-900 rounded-3xl">
-        <img src="${triangle}" width="250" height="250">
+        <img src=".${triangle}" width="250" height="250">
         <div class="absolute -mt-[300px] text-green-400">${secondWorkNumber}</div>
         <div class="absolute -mb-[300px] -ml-[290px] text-cyan-500">${firstPairNumber}</div>
         <div class="absolute  -mb-[300px] -mr-[290px] text-cyan-500">${secondPairNumber}</div>
@@ -105,7 +105,7 @@ export function money(values: any): string {
     <div class="flex flex-col items-center gap-16">
       <div class="text-[18px] text-violet-700 font-bold">ТРЕУГОЛЬНИК ДЕНЕЖНЫЙ</div>
       <div class="relative flex items-center justify-center w-[350px] h-[350px] text-[25px] text-white font-semibold bg-gray-900 rounded-3xl">
-        <img src="${triangle}" width="250" height="250">
+        <img src=".${triangle}" width="250" height="250">
         <div class="absolute -mt-[300px] text-red-600">${thirdWorkNumber}</div>
         <div class="absolute -mb-[300px] -ml-[290px] text-cyan-500">${secondPairNumber}</div>
         <div class="absolute  -mb-[300px] -mr-[290px] text-cyan-500">${thirdPairNumber}</div>
@@ -133,7 +133,7 @@ export function relations(values: any): string {
     <div class="flex flex-col items-center gap-16">
       <div class="text-[18px] text-violet-700 font-bold">ТРЕУГОЛЬНИК ОТНОШЕНИЙ</div>
       <div class="relative flex items-center justify-center w-[350px] h-[350px] text-[25px] text-white font-semibold bg-gray-900 rounded-3xl">
-        <img src="${triangle}" width="250" height="250">
+        <img src=".${triangle}" width="250" height="250">
         <div class="absolute -mt-[300px] text-indigo-500">${fourthWorkNumber}</div>
         <div class="absolute -mb-[300px] -ml-[290px] text-cyan-500">${thirdPairNumber}</div>
         <div class="absolute  -mb-[300px] -mr-[290px] text-cyan-500">${fourthPairNumber}</div>
@@ -161,7 +161,7 @@ export function health(values: any): string {
     <div class="flex flex-col items-center gap-16">
       <div class="text-[18px] text-violet-700 font-bold">ТРЕУГОЛЬНИК ЗДОРОВЬЯ</div>
       <div class="relative flex items-center justify-center w-[350px] h-[350px] text-[25px] text-white font-semibold bg-gray-900 rounded-3xl">
-        <img src="${triangle}" width="250" height="250">
+        <img src=".${triangle}" width="250" height="250">
         <div class="absolute -mt-[300px] text-white">${fifthWorkNumber}</div>
         <div class="absolute -mb-[300px] -ml-[290px] text-cyan-500">${fourthPairNumber}</div>
         <div class="absolute  -mb-[300px] -mr-[290px] text-cyan-500">${fifthPairNumber}</div>
@@ -185,7 +185,7 @@ export function mistake(values: any): string {
     <div class="flex flex-col items-center gap-16">
       <div class="text-[18px] text-violet-700 font-bold">РОКОВАЯ ОШИБКА</div>
       <div class="relative flex items-center justify-center w-[350px] h-[350px] text-[25px] text-white font-semibold bg-gray-900 rounded-3xl">
-        <img src="${simpleStar}" width="280" height="280">
+        <img src=".${simpleStar}" width="280" height="280">
         <div class="absolute w-6 h-6 -mb-56 -ml-3 rounded-full bg-orange-500"></div>
         <div class="absolute -mb-[210px] text-orange-500">${starNumber6}</div>
       </div>
@@ -204,7 +204,7 @@ export function chakras(values: any): string {
     <div class="flex flex-col items-center gap-16">
       <div class="text-[18px] text-violet-700 font-bold">Чакры</div>
       <div class="relative flex items-center justify-center w-[350px] h-[350px] text-[25px] text-white font-semibold bg-gray-900 rounded-3xl">
-        <img src="${simpleStar}" width="280" height="280">
+        <img src=".${simpleStar}" width="280" height="280">
         <div class="absolute -mt-32 -ml-[250px] text-indigo-500">${firstWorkNumber}</div>
         <div class="absolute -mt-32 -ml-[180px] text-white">${starNumber2}</div>
         <div class="absolute -mt-32 -ml-[110px] text-cyan-500">${firstPairNumber}</div>
@@ -239,7 +239,7 @@ export function soul(values: any): string {
     <div class="flex flex-col items-center gap-16">
       <div class="text-[18px] text-violet-700 font-bold">КОД ДУШИ</div>
       <div class="relative flex items-center justify-center w-[350px] h-[350px] text-[25px] text-white font-semibold bg-gray-900 rounded-3xl">
-        <img src="${simpleStar}" width="280" height="280">
+        <img src=".${simpleStar}" width="280" height="280">
         <div class="absolute w-16 mt-4 -ml-16 text-cyan-500 text-left">${starNumber1}</div>
         <div class="absolute w-16 mt-4 -mr-8 text-cyan-500 text-right">${starNumber3}</div>
         <div class="absolute w-16 -mb-32 -ml-4 text-cyan-500 text-center">${starNumber2}</div>
