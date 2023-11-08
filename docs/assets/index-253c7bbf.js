@@ -141,7 +141,7 @@
     <div class="w-full max-w-[350px]">
       <form class="flex flex-col gap-4 w-full">
         <input
-          class="p-6 rounded-lg text-2xl outline-none focus:ring-4 focus:ring-indigo-100"
+          class="p-6 rounded-lg text-2xl outline-none focus:ring-4 focus:ring-indigo-100 appearance-none"
           type="date"
           placeholder="dd.mm.yyyy"
           pattern="d{2}.d{2}.d{4}"
