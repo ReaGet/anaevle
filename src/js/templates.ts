@@ -36,6 +36,15 @@ export function basic(values: any): string {
   `;
 }
 
+export function description(values: any, desc: any): string {
+  const { firstWorkNumber } = values;
+  return `
+    <div class="flex flex-col gap-4 max-w-[600px] px-6 text-[14px]">
+      ${desc[firstWorkNumber]}
+    </div>
+  `;
+}
+
 export function personality(values: any): string {
   const { firstWorkNumber, firstPairNumber, fifthPairNumber } = values;
 

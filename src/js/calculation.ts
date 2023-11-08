@@ -1,5 +1,8 @@
 import { calculate } from "./utils";
-import { basic, chakras, health, mistake, money, personality, relations, soul, spirituality } from "./templates";
+import { basic, description, chakras, health, mistake, money, personality, relations, soul, spirituality } from "./templates";
+import desc from "../../public/desc.json";
+
+console.log(desc)
 
 const formatter = new Intl.DateTimeFormat(["ru-RU"]);
 
@@ -21,6 +24,7 @@ function getMarkup(date: string) {
 
   return `
     ${basic(values)}
+    ${description(values, desc)}
     ${personality(values)}
     ${spirituality(values)}
     ${money(values)}
