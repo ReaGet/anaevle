@@ -158,13 +158,13 @@ export function relations(values: any): string {
 }
 
 export function health(values: any): string {
-  const { fourthWorkNumber, fifthWorkNumber, thirdPairNumber, fourthPairNumber, fifthPairNumber } = values;
+  const { fifthWorkNumber, fourthPairNumber, fifthPairNumber } = values;
 
-  let starNumber2 = sumIfMoreThan(thirdPairNumber + fourthWorkNumber);
-  let starNumber4 = sumIfMoreThan(fourthPairNumber + fourthWorkNumber);
-  let starNumber6 = sumIfMoreThan(thirdPairNumber + fourthPairNumber);
+  let starNumber2 = sumIfMoreThan(fourthPairNumber + fifthWorkNumber);
+  let starNumber4 = sumIfMoreThan(fifthPairNumber + fifthWorkNumber);
+  let starNumber6 = sumIfMoreThan(fourthPairNumber + fifthPairNumber);
   let starNumber7 = sumIfMoreThan(starNumber2 + starNumber4);
-  let starNumber8 = sumIfMoreThan(fourthWorkNumber + starNumber6);
+  let starNumber8 = sumIfMoreThan(fifthWorkNumber + starNumber6);
 
   return `
     <div class="flex flex-col items-center gap-16">
